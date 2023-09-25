@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.939" tests="6" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-09-25T16:45:08" tests="0" file="cypress/e2e/todo.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="example to-do app" timestamp="2023-09-25T16:45:08" tests="2" time="0.000" failures="1">
+    <testcase name="example to-do app can add new todo items" time="0.000" classname="can add new todo items">
+      <failure message="Timed out retrying after 4000ms: Too many elements found. Found &apos;3&apos;, expected &apos;2&apos;." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Too many elements found. Found '3', expected '2'.
+    at Context.eval (webpack://cypress_example/./cypress/e2e/todo.cy.js:13:7)
+
+      + expected - actual
+
+      -3
+      +2
+      ]]></failure>
+    </testcase>
+    <testcase name="example to-do app can check an item as completed" time="0.280" classname="can check an item as completed">
+    </testcase>
+  </testsuite>
+  <testsuite name="with a checked task" timestamp="2023-09-25T16:45:14" tests="4" time="1.234" failures="0">
+    <testcase name="example to-do app with a checked task can filter for uncompleted tasks" time="0.341" classname="can filter for uncompleted tasks">
+    </testcase>
+    <testcase name="example to-do app with a checked task can filter for completed tasks" time="0.328" classname="can filter for completed tasks">
+    </testcase>
+    <testcase name="example to-do app with a checked task can delete all completed tasks" time="0.324" classname="can delete all completed tasks">
+    </testcase>
+    <testcase name="example to-do app with a checked task should include attachment" time="0.217" classname="should include attachment">
+    </testcase>
+  </testsuite>
+</testsuites>

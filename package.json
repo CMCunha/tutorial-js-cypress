@@ -1,0 +1,19 @@
+{
+  "name": "cypress_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "mocha-junit-reporter": "^2.2.1",
+    "webpack": "^5.75.0",
+    "webpack-preprocessor": "^0.1.12"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  },
+  "scripts": {
+    "test": "npx cypress run --spec \"cypress/e2e/*\""
+  },
+  "author": "",
+  "license": "ISC"
+}
