@@ -33,6 +33,7 @@ jobs:
       - name: debug JUnit XML report
         run: cat results/todo-results.xml
       - name: "Import results to Xray (cloud) using a GH action"
+        if: always()
         uses: mikepenz/xray-action@v2.3.0
         with:
            username: "${{ secrets.XRAYCLOUD_CLIENT_ID }}"
