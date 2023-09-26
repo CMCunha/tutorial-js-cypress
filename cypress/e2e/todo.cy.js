@@ -10,12 +10,23 @@ describe('example to-do app', () => {
     cy.get('[data-test=new-todo]').type(`${newItem}{enter}`)
 
     cy.get('.todo-list li')
-      .should('have.length', 3)
+      .should('have.length', 2)
       .last()
       .should('have.text', newItem)
   })
 
   it('can check an item as completed', () => {
+    cy.contains('Pay electric bill')
+      .parent()
+      .find('input[type=checkbox]')
+      .check()
+
+    cy.contains('Pay electric bill')
+      .parents('li')
+      .should('have.class', 'completed')
+  })
+
+  it('CC can check an item as completed', () => {
     cy.contains('Pay electric bill')
       .parent()
       .find('input[type=checkbox]')
